@@ -1,6 +1,6 @@
 # Оптимизация веб-страниц (курсовой проект)
 
-[сайт](https://doetherham.github.io/centum_optimization/lessons.html)
+[сайт](https://doetherham.github.io/centum_optimization/index.html)
 
 ## Описание
 
