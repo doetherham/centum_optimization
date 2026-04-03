@@ -1,0 +1,157 @@
+.my_account {
+    margin-top: 140px;
+}
+
+.my_account .container {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.my_data {
+    box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.302);
+    border-radius: 50px;
+    padding: 40px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.my_data_text {
+    flex: 1;
+    margin-left: 90px;
+}
+
+.my_data_text p {
+    color: #262626;
+}
+
+.edit_my_data {
+    height: fit-content;
+    padding: 20px;
+    padding-inline: 60px;
+    background-color: #F6C84E;
+    border-radius: 20px;
+    border: none;
+    transition: all 0.2s ease-in-out;
+    
+}
+
+.edit_my_data:hover {
+    transition: all 0.2s ease-in-out;
+    transform: translateY(-10%);
+    box-shadow: 1px 5px 26px -16px rgba(0, 0, 0, 0.687);
+}
+
+.pfp {
+    width: 20%;
+}
+
+.my_signups {
+    padding: 50px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.302);
+    border-radius: 50px;
+    gap: 40px;
+}
+
+.my_signups h5 {
+    text-align: center;
+    margin-bottom: 70px;
+    color: #26262694;
+}
+
+.my_teachers {
+    box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.302);
+    border-radius: 50px;
+    background-color: white;
+    padding: 50px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.open_teachers_list {
+    aspect-ratio: 1 / 1;
+    padding: 10px;
+    border-radius: 20px;
+    background-color: #4A6FFE;
+    border: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: all 0.2s ease-in-out;
+}
+
+.open_teachers_list:hover {
+    transition: all 0.2s ease-in-out;
+    transform: translateY(-10%);
+    box-shadow: 1px 5px 26px -16px rgba(0, 0, 0, 0.687);
+}
+
+.open_teachers_list img {
+    width: 80%;
+    margin: auto;
+    transition: all 0.2s ease-in-out;
+}
+
+@media (max-width: 480px) {
+    .my_data_text {
+        margin-left: 10px;
+    }
+
+    .edit_my_data {
+        padding: 10px;
+    }
+
+    .open_teachers_list {
+        width: 20%;
+        padding: 5% !important;        
+        border-radius: 30%;
+    }
+
+    .my_account .container > div {
+        padding: 20px;
+        border-radius: 30px;
+    } 
+
+    .my_data_text h3 {
+        font-size: 16px;
+    }
+
+    .my_data_text p {
+        font-size: 1px !important;
+    }
+
+    .edit_my_data {
+        padding: 5px;
+    }
+}
+
+@media (min-width: 481px) and (max-width: 780px) {
+
+    .my_data_text {
+        margin-left: 10px;
+    }
+
+    .edit_my_data {
+        padding: 10px;
+    }
+
+    .open_teachers_list {
+        width: 20%;
+        padding: 5% !important;        
+        border-radius: 30%;
+    }
+
+    
+}
+
+@media (min-width: 780px) and (max-width: 1200px) {
+    
+
+    .open_teachers_list {
+        width: 10%;
+        
+    }
+}

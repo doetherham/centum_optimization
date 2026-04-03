@@ -1,0 +1,212 @@
+.lessons_section {
+    margin-top: 150px;    
+}
+
+.lessons_section .container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.lesson_filter {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    background-color: #4A6FFE;
+    padding: 20px;
+    width: 30%;
+    border-radius: 50px;
+    box-shadow: 0px 0px 3px 0px #4A6FFE;
+}
+
+.lesson_filter h5 {
+    margin-left: 10px;
+    color: white;
+}
+
+.lesson_filter select {
+    padding: 8px;
+    border-radius: 50px;
+    padding-inline: 10px;
+    font-family: Nunito;
+    font-weight: bold;
+    border: none;
+    color: #262626;
+    width: 100%;
+}
+
+.lesson_filter select::picker-icon {
+    color: #999999;
+    transition: 0.4s rotate;
+  }
+
+.lesson_filter select:open::picker-icon {
+    rotate: 180deg;
+}
+
+.chapter_title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.chapter_text {
+    margin-left: 20px;
+}
+
+.chapter {
+    padding: 5%;
+    box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.302);
+    border-radius: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    transition: 0.2s all ease-in-out;
+}
+
+.open_chapter {
+    background-color: #4A6FFE;
+    border: none;
+    padding: 2% !important;
+    aspect-ratio: 1 / 1;
+    border-radius: 25%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.2s ease-in-out;
+}
+
+.open_chapter img {
+    width: 90%;
+    transition: all 0.2s ease-in-out !important;
+}
+
+.chapter_block {
+    margin-top: 40px;
+    justify-content: space-between;
+    width: 100%;
+    display: flex;
+}
+
+.chapter_block .video {
+    border-radius: 20px;
+    width: 50%;
+}
+
+.chapter_block video {
+    width: 100%;
+}
+
+.chapter_nav {
+    display: flex;
+    flex-direction: column;
+    gap: 10%;
+    list-style: none;
+    padding-left: 20px;
+}
+
+a {
+    width: fit-content;
+}
+
+li:hover a {
+    transition: 0.2s all ease-in-out;
+    color: #4A6FFE;
+}
+
+li:hover a::after {
+    transition: 0.2s all ease-in-out;
+    transform: scaleX(1);
+}
+
+
+@media (max-width: 480px) {
+    .lesson_filter {
+        width: 70%;
+    }
+
+    .chapter {
+        padding: 30px;
+    }
+
+    .chapter_block {
+        flex-direction: column;
+    }
+
+    .chapter_text {
+        margin-left: 0px;
+    }
+
+    .chapter_nav {
+        padding-left: 0px;
+    }
+
+    .chapter_block .video {
+        margin-top: 5%;
+    }
+
+    .chapter_block .video {
+        border-radius: 20px;
+        width: 100%;
+    }
+
+    .chapter_block video {
+        width: 100%;
+    }
+}
+
+@media (min-width: 481px) and (max-width: 780px) {
+    .lesson_filter {
+        width: 50%;
+    }
+
+    .chapter {
+        padding: 30px;
+    }
+
+    .chapter_block {
+        flex-direction: column;
+    }
+
+    .chapter_text {
+        margin-left: 0px;
+    }
+
+    .chapter_nav {
+        padding-left: 0px;
+        gap: 15px;
+    }
+
+    .chapter_block .video {
+        margin-top: 5%;
+    }
+
+    .chapter_block .video {
+        border-radius: 20px;
+        width: 100%;
+    }
+
+    .chapter_block video {
+        width: 100%;
+    }
+}
+
+@media (min-width: 780px) and (max-width: 1200px) {
+    .chapter_block .video {
+        border-radius: 20px;
+        
+    }
+
+    .chapter_block .video {
+        border-radius: 20px;
+        width: 50%;
+    }
+
+    .chapter_block video {
+        width: 100%;
+    }
+
+    
+}

@@ -1,0 +1,9 @@
+User-agent: *
+Disallow: /admin/
+Disallow: /login/
+Disallow: /error/
+
+
+Allow: /
+
+Sitemap: https://centum.ru/sitemap.xml

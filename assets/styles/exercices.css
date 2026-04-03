@@ -1,0 +1,120 @@
+.exercices_list {
+    margin-top: 150px;
+}
+
+.exercices_list_and_levels {
+    display: flex;
+    gap: 20px;
+    margin-top: 50px;
+}
+
+.exercices_list_select {
+    box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.302);
+    padding: 50px;
+    border-radius: 50px;
+    display: flex;
+    gap: 20px;
+    flex-direction: column;
+    height: fit-content;
+}
+
+.levels {
+    box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.302);
+    flex: 1;
+    border-radius: 50px;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+
+.level {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.level_open img {
+    width: 80%;
+    margin: auto;
+    transition: all 0.2s ease-in-out;
+}
+
+.level_open {
+    width: 10%;
+    aspect-ratio: 1 / 1;
+    padding: 10px;
+    border-radius: 20px;
+    background-color: #4A6FFE;
+    border: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: all 0.2s ease-in-out;
+}
+
+.level_open:hover {
+    transition: all 0.2s ease-in-out;
+    transform: translateY(-10%);
+    box-shadow: 1px 5px 26px -16px rgba(0, 0, 0, 0.687);
+}
+
+@media (max-width: 480px) {
+    .exercices_list_select {
+        padding: 40px ;
+        flex-direction: column;
+    }
+
+   .level_open {
+        padding: 15px !important;
+        width: 15%;
+    }
+
+    .level_open img {
+        width: 50% !important;
+    }
+
+    .level_open img {
+        width: 100% !important;
+    }
+
+    .exercices_list_and_levels {
+        flex-direction: column;
+    }
+
+}
+
+@media (min-width: 481px) and (max-width: 780px) {
+    .exercices_list_select {
+        padding: 20px;
+    }
+
+    a {
+        font-size: 8px;
+    }
+
+    .level_open {
+        padding: 0px !important;
+        width: 15%;
+    }
+
+    .level_open img {
+        width: 50% !important;
+    }
+
+    .exercices_list_and_levels {
+        flex-direction: column;
+    }
+
+    .exercices_list_select {
+        flex-direction: row;
+    }
+}
+
+@media (min-width: 780px) and (max-width: 1200px) {
+    .exercices_list_select {
+        padding: 35px;
+    }
+
+    
+}
